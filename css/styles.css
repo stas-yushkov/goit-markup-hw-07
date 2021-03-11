@@ -37,11 +37,6 @@
   --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Remove markers from lists */
-ul {
-  list-style: none;
-}
-
 /* Remove underline from urls */
 a {
   text-decoration: none;
@@ -53,6 +48,22 @@ a {
   text-transform: uppercase;
 }
 
+/* visually hide some elements */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Common font, color, bg-color */
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -61,28 +72,6 @@ body {
   letter-spacing: 0.03em;
   background-color: var(--white-color);
   color: var(--primary-color);
-}
-
-.container {
-  display: flex;
-  width: 1200px; /* TODO: @width в будущем переделать под адаптив@ сделать "max-width: 1200px;" и пофиксить все что поплывет при изменении вьюпорта */
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-
-  /* outline: 2px dotted tomato; */
-}
-
-.header .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.header .nav {
-  display: flex;
-  align-items: center;
 }
 
 .header {
@@ -99,16 +88,24 @@ body {
   border-bottom: 1px solid var(--border-color);
 }
 
-/* .header::after {
-  position: absolute;
-  content: '';
-  display: block;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 1px;
-  background-color: var(--border-color); 
-}*/
+.header .container {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .nav {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  width: 1200px; /* TODO: @width в будущем переделать под адаптив@ сделать "max-width: 1200px;" и пофиксить все что поплывет при изменении вьюпорта */
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /* reset margins for headings & paragraphs */
 h1,
@@ -129,9 +126,11 @@ ul {
   flex-wrap: wrap;
 
   /* reset user agent styles */
-  list-style: none;
   padding: 0;
   margin: 0;
+
+  /* Remove markers from lists */
+  list-style: none;
 
   /* compensation for .card margins */
   margin-top: calc(-1 * var(--card-set-gap));
@@ -320,6 +319,9 @@ img {
 /* nav */
 .nav-list {
   display: flex;
+
+  /* Remove markers from lists */
+  list-style: none;
 }
 
 .nav-list-item:not(.nav-list-item:last-child) {
@@ -612,7 +614,7 @@ img {
 .footer > .container {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: baseline;
 }
 
@@ -682,7 +684,7 @@ img {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  margin-left: 70px;
+  /* margin-left: 70px; */
 
   font-weight: 700;
   line-height: 1.15;
@@ -712,17 +714,6 @@ img {
   margin-right: 10px;
   fill: currentColor;
 }
-
-/* .header .address-item::before {
-  content: '';
-  width: 10px;
-  height: 10px;
-  margin-right: 1px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color: currentColor;
-} */
 
 .about.section {
   padding-top: 0;
@@ -784,6 +775,9 @@ img {
 .filter-set {
   display: flex;
 
+  /* Remove markers from lists */
+  list-style: none;
+
   /* margin-left: auto;
   margin-right: auto; */
   justify-content: center;
@@ -835,6 +829,9 @@ img {
   display: flex;
   margin-top: 16px;
   justify-content: space-between;
+
+  /* Remove markers from lists */
+  list-style: none;
 }
 
 .social-link {
@@ -902,20 +899,6 @@ img {
   background-color: var(--white-color);
 
   /* width: 270px; */
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 /* * {
@@ -1276,7 +1259,7 @@ img {
 
 /* footer email-input-form */
 .email-form {
-  margin-left: auto;
+  /* margin-left: auto; */
   color: var(--white-color);
   font-size: 14px;
   font-weight: 700;
