@@ -37,8 +37,32 @@
   --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Common font, color, bg-color */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  background-color: var(--white-color);
+  color: var(--primary-color);
+}
+
+/* reset margins for headings & paragraphs */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 /* Remove underline from urls */
-a {
+.link {
   text-decoration: none;
   font-style: normal;
 }
@@ -61,17 +85,6 @@ a {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-/* Common font, color, bg-color */
-body {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  background-color: var(--white-color);
-  color: var(--primary-color);
 }
 
 .header {
@@ -102,22 +115,9 @@ body {
   justify-content: space-between;
 }
 
-.header .nav {
+.nav {
   display: flex;
   align-items: center;
-}
-
-/* reset margins for headings & paragraphs */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul {
-  margin: 0;
-  padding: 0;
 }
 
 /* adaptive grid (card-set, card-set-item) */
@@ -297,7 +297,7 @@ img {
   font-size: 26px;
   line-height: 1.19;
 
-  /* letter-spacing: 0.03em; */
+  letter-spacing: 0.03em;
   color: var(--accent-color);
 
   /* transition-property: text-shadow;
