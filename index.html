@@ -68,21 +68,19 @@
       <div class="container header__container">
         <nav class="nav">
           <a href="./index.html" lang="en" class="logo link">
-            Web<span class="logo-part">Studio</span>
+            Web<span class="logo__part">Studio</span>
           </a>
-          <ul class="nav-list">
-            <li class="nav-list-item">
-              <a href="./index.html" class="nav-link current-page link"
-                >Студия</a
-              >
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="./index.html" class="nav__link current link">Студия</a>
             </li>
 
-            <li class="nav-list-item">
-              <a href="./portfolio.html" class="nav-link link">Портфолио</a>
+            <li class="nav__item">
+              <a href="./portfolio.html" class="nav__link link">Портфолио</a>
             </li>
 
-            <li class="nav-list-item">
-              <a href="#contacts" class="nav-link link">Контакты</a>
+            <li class="nav__item">
+              <a href="#contacts" class="nav__link link">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -90,16 +88,16 @@
           <a
             href="mailto:info@devstudio.com"
             lang="en"
-            class="address-item link"
+            class="address-list__item link"
           >
-            <svg class="address-icon" width="16" height="12">
+            <svg class="address-list__icon" width="16" height="12">
               <use href="./images/icons.svg#envelope"></use>
             </svg>
             info@devstudio.com
           </a>
 
-          <a href="tel:+380961111111" class="address-item link">
-            <svg class="address-icon" width="10" height="16">
+          <a href="tel:+380961111111" class="address-list__item link">
+            <svg class="address-list__icon" width="10" height="16">
               <use href="./images/icons.svg#smartphone"></use>
             </svg>
             +38&nbsp;096&nbsp;111&nbsp;11&nbsp;11
@@ -186,7 +184,7 @@
       </section>
       <!-- About section -->
       <section class="about section">
-        <div class="container">
+        <div class="container about__container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="card-set">
             <li class="about-card">
@@ -236,7 +234,7 @@
 
       <!--team section-->
       <section class="team section">
-        <div class="container">
+        <div class="container team__container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="card-set">
             <li class="card-set-item">
@@ -528,7 +526,7 @@
 
       <!--clients section-->
       <section class="clients section">
-        <div class="container">
+        <div class="container clients__container">
           <h2 class="section-title">Постоянные клиенты</h2>
           <ul class="card-set">
             <li class="card-set-item">
@@ -620,15 +618,15 @@
     </main>
 
     <footer class="footer">
-      <div class="container">
-        <div class="footer-address-sidebar">
+      <div class="container footer__container">
+        <div class="footer-address-wrapper">
           <a href="./index.html" lang="en" class="logo link">
-            Web<span class="logo-part">Studio</span>
+            Web<span class="logo__part">Studio</span>
           </a>
-          <address id="contacts" class="address-list">
+          <address id="contacts" class="address-list footer__address-list">
             <a
               href="https://goo.gl/maps/3aquBBFfu6E2QgFt6"
-              class="address-item map link"
+              class="address-list__item address-list__item--footer address-list__item--map link"
               rel="nofollow noopener noreferrer"
               target="blanc"
             >
@@ -638,18 +636,21 @@
             <a
               href="mailto:info@example.com"
               lang="en"
-              class="address-item link"
+              class="address-list__item address-list__item--footer link"
             >
               info@example.com
             </a>
 
-            <a href="tel:+380991111111" class="address-item link">
+            <a
+              href="tel:+380991111111"
+              class="address-list__item address-list__item--footer link"
+            >
               +38&nbsp;099&nbsp;111&nbsp;11&nbsp;11
             </a>
           </address>
         </div>
 
-        <div class="footer-socials-sidebar uppercase">
+        <div class="footer-socials-wrapper uppercase">
           <p>присоединяйтесь</p>
 
           <ul class="social-links">
