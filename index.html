@@ -65,10 +65,10 @@
 
   <body>
     <header class="header">
-      <div class="container header__container">
+      <div class="container container--header">
         <nav class="nav">
           <a href="./index.html" lang="en" class="logo link">
-            Web<span class="logo__part">Studio</span>
+            Web<span class="logo__part logo__part">Studio</span>
           </a>
           <ul class="nav__list">
             <li class="nav__item">
@@ -126,57 +126,65 @@
         <div class="container">
           <!-- <div class="wrapper"> -->
           <h2 class="visually-hidden">Наши ценности</h2>
-          <ul class="card-set">
-            <li class="card">
-              <div class="card-thumb">
-                <svg height="70" width="70">
-                  <use href="./images/icons.svg#antenna-1"></use>
-                </svg>
+          <ul class="grid">
+            <li class="grid__item grid__item--features">
+              <div class="card card--features">
+                <div class="card-thumb">
+                  <svg height="70" width="70">
+                    <use href="./images/icons.svg#antenna-1"></use>
+                  </svg>
+                </div>
+                <h3 class="features-title uppercase">Внимание к деталям</h3>
+                <p>
+                  Идейные соображения, а также начало повседневной работы по
+                  формированию позиции.
+                </p>
               </div>
-              <h3 class="features-title uppercase">Внимание к деталям</h3>
-              <p>
-                Идейные соображения, а также начало повседневной работы по
-                формированию позиции.
-              </p>
             </li>
 
-            <li class="card">
-              <div class="card-thumb">
-                <svg height="70" width="70">
-                  <use href="./images/icons.svg#clock-1"></use>
-                </svg>
+            <li class="grid__item grid__item--features">
+              <div class="card card--features">
+                <div class="card-thumb">
+                  <svg height="70" width="70">
+                    <use href="./images/icons.svg#clock-1"></use>
+                  </svg>
+                </div>
+                <h3 class="features-title uppercase">Пунктуальность</h3>
+                <p>
+                  Задача организации, в особенности же рамки и место обучения
+                  кадров влечёт за собой.
+                </p>
               </div>
-              <h3 class="features-title uppercase">Пунктуальность</h3>
-              <p>
-                Задача организации, в особенности же рамки и место обучения
-                кадров влечёт за собой.
-              </p>
             </li>
 
-            <li class="card">
-              <div class="card-thumb">
-                <svg height="70" width="70">
-                  <use href="./images/icons.svg#diagram-1"></use>
-                </svg>
+            <li class="grid__item grid__item--features">
+              <div class="card card--features">
+                <div class="card-thumb">
+                  <svg height="70" width="70">
+                    <use href="./images/icons.svg#diagram-1"></use>
+                  </svg>
+                </div>
+                <h3 class="features-title uppercase">Планирование</h3>
+                <p>
+                  Равным образом консультация с широким активом в значительной
+                  степени обуславливает.
+                </p>
               </div>
-              <h3 class="features-title uppercase">Планирование</h3>
-              <p>
-                Равным образом консультация с широким активом в значительной
-                степени обуславливает.
-              </p>
             </li>
 
-            <li class="card">
-              <div class="card-thumb">
-                <svg height="70" width="70">
-                  <use href="./images/icons.svg#astronaut-1"></use>
-                </svg>
+            <li class="grid__item grid__item--features">
+              <div class="card card--features">
+                <div class="card-thumb">
+                  <svg height="70" width="70">
+                    <use href="./images/icons.svg#astronaut-1"></use>
+                  </svg>
+                </div>
+                <h3 class="features-title uppercase">Современные технологии</h3>
+                <p>
+                  Значимость этих проблем настолько очевидна, что реализация
+                  плановых заданий.
+                </p>
               </div>
-              <h3 class="features-title uppercase">Современные технологии</h3>
-              <p>
-                Значимость этих проблем настолько очевидна, что реализация
-                плановых заданий.
-              </p>
             </li>
           </ul>
           <!-- </div> -->
@@ -184,47 +192,53 @@
       </section>
       <!-- About section -->
       <section class="about section">
-        <div class="container about__container">
-          <h2 class="section-title">Чем мы занимаемся</h2>
-          <ul class="card-set">
-            <li class="about-card">
-              <div class="card-thumb">
-                <img
-                  class="about-image"
-                  src="./images/box-001.jpg"
-                  alt="Десктопные приложения"
-                  width="370"
-                />
-                <div class="overlay">
-                  <p class="overlay-text uppercase">Десктопные приложения</p>
+        <div class="container container--about">
+          <h2 class="section__title">Чем мы занимаемся</h2>
+          <ul class="grid">
+            <li class="grid__item grid__item--about">
+              <div class="about-card">
+                <div class="card-thumb">
+                  <img
+                    class="about-image"
+                    src="./images/box-001.jpg"
+                    alt="Десктопные приложения"
+                    width="370"
+                  />
+                  <div class="overlay">
+                    <p class="overlay-text uppercase">Десктопные приложения</p>
+                  </div>
                 </div>
               </div>
             </li>
 
-            <li class="about-card">
-              <div class="card-thumb">
-                <img
-                  class="about-image"
-                  src="./images/box-002.jpg"
-                  alt="Мобильные приложения"
-                  width="370"
-                />
-                <div class="overlay">
-                  <p class="overlay-text uppercase">Мобильные приложения</p>
+            <li class="grid__item grid__item--about">
+              <div class="about-card">
+                <div class="card-thumb">
+                  <img
+                    class="about-image"
+                    src="./images/box-002.jpg"
+                    alt="Мобильные приложения"
+                    width="370"
+                  />
+                  <div class="overlay">
+                    <p class="overlay-text uppercase">Мобильные приложения</p>
+                  </div>
                 </div>
               </div>
             </li>
 
-            <li class="about-card">
-              <div class="card-thumb">
-                <img
-                  class="about-image"
-                  src="./images/box-003.jpg"
-                  alt="Дизайнерские решения"
-                  width="370"
-                />
-                <div class="overlay">
-                  <p class="overlay-text uppercase">Дизайнерские решения</p>
+            <li class="grid__item grid__item--about">
+              <div class="about-card">
+                <div class="card-thumb">
+                  <img
+                    class="about-image"
+                    src="./images/box-003.jpg"
+                    alt="Дизайнерские решения"
+                    width="370"
+                  />
+                  <div class="overlay">
+                    <p class="overlay-text uppercase">Дизайнерские решения</p>
+                  </div>
                 </div>
               </div>
             </li>
@@ -234,10 +248,10 @@
 
       <!--team section-->
       <section class="team section">
-        <div class="container team__container">
-          <h2 class="section-title">Наша команда</h2>
-          <ul class="card-set">
-            <li class="card-set-item">
+        <div class="container container--team">
+          <h2 class="section__title">Наша команда</h2>
+          <ul class="grid">
+            <li class="grid__item">
               <div class="card-thumb">
                 <img
                   src="./images/card-001.jpg"
@@ -308,7 +322,7 @@
               </div>
             </li>
 
-            <li class="card-set-item">
+            <li class="grid__item">
               <div class="card-thumb">
                 <img
                   src="./images/card-002.jpg"
@@ -379,7 +393,7 @@
               </div>
             </li>
 
-            <li class="card-set-item">
+            <li class="grid__item">
               <div class="card-thumb">
                 <img
                   src="./images/card-003.jpg"
@@ -450,7 +464,7 @@
               </div>
             </li>
 
-            <li class="card-set-item">
+            <li class="grid__item">
               <div class="card-thumb">
                 <img
                   src="./images/card-004.jpg"
@@ -526,10 +540,10 @@
 
       <!--clients section-->
       <section class="clients section">
-        <div class="container clients__container">
-          <h2 class="section-title">Постоянные клиенты</h2>
-          <ul class="card-set">
-            <li class="card-set-item">
+        <div class="container container--clients">
+          <h2 class="section__title">Постоянные клиенты</h2>
+          <ul class="grid">
+            <li class="grid__item grid__item--clients">
               <a
                 class="client-link link"
                 href="#"
@@ -543,7 +557,7 @@
               </a>
             </li>
 
-            <li class="card-set-item">
+            <li class="grid__item grid__item--clients">
               <a
                 class="client-link link"
                 href="#"
@@ -557,7 +571,7 @@
               </a>
             </li>
 
-            <li class="card-set-item">
+            <li class="grid__item grid__item--clients">
               <a
                 class="client-link link"
                 href="#"
@@ -571,7 +585,7 @@
               </a>
             </li>
 
-            <li class="card-set-item">
+            <li class="grid__item grid__item--clients">
               <a
                 class="client-link link"
                 href="#"
@@ -585,7 +599,7 @@
               </a>
             </li>
 
-            <li class="card-set-item">
+            <li class="grid__item grid__item--clients">
               <a
                 class="client-link link"
                 href="#"
@@ -599,7 +613,7 @@
               </a>
             </li>
 
-            <li class="card-set-item">
+            <li class="grid__item grid__item--clients">
               <a
                 class="client-link link"
                 href="#"
@@ -618,10 +632,10 @@
     </main>
 
     <footer class="footer">
-      <div class="container footer__container">
+      <div class="container container--footer">
         <div class="footer-address-wrapper">
-          <a href="./index.html" lang="en" class="logo link">
-            Web<span class="logo__part">Studio</span>
+          <a href="./index.html" lang="en" class="logo logo--footer link">
+            Web<span class="logo__part logo__part--footer">Studio</span>
           </a>
           <address id="contacts" class="address-list footer__address-list">
             <a

@@ -24,7 +24,7 @@
   --footer-socials-bg-color: rgba(255, 255, 255, 0.1);
   --transparent-color: rgba(0, 0, 0, 0);
 
-  --card-set-gap: 30px; /* set-gap between cards for adaptive grid */
+  --grid-gap: 30px; /* set-gap between items for adaptive grid */
 
   --box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -111,29 +111,29 @@ ul {
   align-items: center;
 }
 
-.header__container {
+.container--header {
   justify-content: space-between;
 }
 
-.portfolio__container {
+.container--portfolio {
   flex-direction: column;
 }
 
-.about__container {
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-.team__container {
+.container--about {
   flex-direction: column;
   justify-content: flex-start;
 }
 
-.clients .container {
+.container--team {
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.container--clients {
   flex-direction: column;
 }
 
-.footer__container {
+.container--footer {
   justify-content: space-between;
   align-items: baseline;
 }
@@ -251,15 +251,15 @@ ul {
   /* text-shadow: var(--button-shadow); */
 }
 
-.header .logo__part {
+.logo__part--header {
   color: var(--black-color);
 }
 
-.footer .logo__part {
+.logo__part--footer {
   color: var(--white-color);
 } /* end of Logo styles */
 
-.footer .logo {
+.logo--footer {
   margin-right: 0;
   margin-bottom: 20px;
 }
@@ -334,8 +334,22 @@ ul {
   fill: currentColor;
 }
 
-/* adaptive grid (card-set, card-set-item) */
-.card-set {
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section__title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  line-height: 1.17;
+  color: var(--secondary-color);
+}
+
+/* adaptive grid (grid, grid__item) */
+.grid {
   display: flex;
   flex-wrap: wrap;
 
@@ -346,28 +360,70 @@ ul {
   /* Remove markers from lists */
   list-style: none;
 
-  /* compensation for .card margins */
-  margin-top: calc(-1 * var(--card-set-gap));
-  margin-left: calc(-1 * var(--card-set-gap));
+  /* compensation for grid__item margins */
+  margin-top: calc(-1 * var(--grid-gap));
+  margin-left: calc(-1 * var(--grid-gap));
 }
 
-.card-set-item {
+.grid__item {
   flex-basis: calc(
-    100% / 4 - var(--card-set-gap)
-  ); /* "100% / 4" - where "4" is count of items in row, so every card will got 1/4 parrent width but - var(--card-set-gap)  */
+    100% / 4 - var(--grid-gap)
+  ); /* "100% / 4" - where "4" is count of items in row, so every card will got 1/4 parrent width but - var(--grid-gap)  */
 
-  margin-top: var(--card-set-gap);
-  margin-left: var(--card-set-gap);
+  margin-top: var(--grid-gap);
+  margin-left: var(--grid-gap);
 
-  /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2); */
   box-shadow: var(--box-shadow);
 
   border-radius: 4px;
+  /* text-align: center; */
+
+  background-color: var(--white-color);
+}
+
+.grid__item--about {
+  flex-basis: calc(100% / 3 - var(--grid-gap));
+
+  margin-top: var(--grid-gap);
+  margin-left: var(--grid-gap);
+}
+
+.grid__item--features {
+  flex-basis: calc(100% / 4 - var(--grid-gap));
+
+  margin-top: var(--grid-gap);
+  margin-left: var(--grid-gap);
+}
+
+.grid__item--clients {
+  flex-basis: calc(
+    100% / 6 - var(--grid-gap)
+  ); /* "100% / 4" - where "4" is count of items in row, so every card will got 1/4 parrent width but - var(--grid-gap)  */
+
+  margin-top: var(--grid-gap);
+  margin-left: var(--grid-gap);
+
+  /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2); */
+  border-radius: 4px;
   text-align: center;
+  box-shadow: none;
 
   background-color: var(--white-color);
 
   /* width: 270px; */
+}
+
+.grid__item--portfolio {
+  background-color: var(--white-color);
+
+  /* width: 370px; */
+  flex-basis: calc(100% / 3 - var(--grid-gap));
+
+  margin-top: var(--grid-gap);
+  margin-left: var(--grid-gap);
+
+  /* border: 1px solid var(--border-color); */
 }
 
 /* Самая простая техника отзывчивых изображений card-thumb */
@@ -385,6 +441,22 @@ img {
   height: 100%;
 
   object-fit: cover;
+}
+
+.features .card-thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+
+  /* padding: 25px 100px; */
+  /* padding: auto;
+  text-align: center; */
+
+  border-radius: 4px;
+  background-color: var(--secondary-background-color);
 }
 
 .card-content {
@@ -508,20 +580,6 @@ img {
   color: var(--secondary-color);
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.section-title {
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  letter-spacing: 0.03em;
-  line-height: 1.17;
-  color: var(--secondary-color);
-}
-
 .team {
   background-color: var(--secondary-background-color);
 }
@@ -533,18 +591,6 @@ img {
 .card {
   background-color: var(--white-color);
   max-width: 270px;
-}
-
-.portfolio-item {
-  background-color: var(--white-color);
-
-  /* width: 370px; */
-  flex-basis: calc(100% / 3 - var(--card-set-gap));
-
-  margin-top: var(--card-set-gap);
-  margin-left: var(--card-set-gap);
-
-  /* border: 1px solid var(--border-color); */
 }
 
 .portfolio-item-link {
@@ -584,7 +630,7 @@ img {
   border-right: 1px solid var(--border-color);
 }
 
-.portfolio .card-thumb {
+.card-thumb--portfolio {
   position: relative;
   max-height: 294px;
   overflow: hidden;
@@ -616,7 +662,7 @@ img {
   transform: translateY(0);
 }
 
-.portfolio .overlay-text {
+.overlay-text {
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
@@ -662,10 +708,6 @@ img {
   font-size: 16px;
   line-height: 1.19;
 }
-
-/* .team .card {
-
-} */
 
 .card-item {
   margin-top: 10px;
@@ -715,13 +757,6 @@ img {
   padding-top: 6px;
 }
 
-.about-card {
-  flex-basis: calc(100% / 3 - var(--card-set-gap));
-
-  margin-top: var(--card-set-gap);
-  margin-left: var(--card-set-gap);
-}
-
 .about .card-thumb {
   position: relative;
   max-height: 294px;
@@ -768,34 +803,6 @@ img {
 
 .filter-item:not(:last-child) {
   margin-right: 8px;
-
-  /* flex-basis: calc(100% / 3 - var(--card-set-gap));
-
-  margin-top: var(--card-set-gap);
-  margin-left: var(--card-set-gap); */
-}
-
-.features .card {
-  flex-basis: calc(100% / 4 - var(--card-set-gap));
-
-  margin-top: var(--card-set-gap);
-  margin-left: var(--card-set-gap);
-}
-
-.features .card-thumb {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 30px;
-  width: 270px;
-  height: 120px;
-
-  /* padding: 25px 100px; */
-  /* padding: auto;
-  text-align: center; */
-
-  border-radius: 4px;
-  background-color: var(--secondary-background-color);
 }
 
 .social-links {
@@ -849,29 +856,6 @@ img {
   fill: var(--accent-color);
   outline: none;
 }
-
-.clients .card-set-item {
-  flex-basis: calc(
-    100% / 6 - var(--card-set-gap)
-  ); /* "100% / 4" - where "4" is count of items in row, so every card will got 1/4 parrent width but - var(--card-set-gap)  */
-
-  margin-top: var(--card-set-gap);
-  margin-left: var(--card-set-gap);
-
-  /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2); */
-  border-radius: 4px;
-  text-align: center;
-  box-shadow: none;
-
-  background-color: var(--white-color);
-
-  /* width: 270px; */
-}
-
-/* * {
-  outline: 1px dotted rgba(0, 0, 0, 0.06);
-} */
 
 /* sign backdrop */
 .backdrop-sign {
