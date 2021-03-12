@@ -376,7 +376,6 @@ ul {
   box-shadow: var(--box-shadow);
 
   border-radius: 4px;
-  /* text-align: center; */
 
   background-color: var(--white-color);
 }
