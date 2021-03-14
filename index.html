@@ -30,36 +30,8 @@
     <link rel="stylesheet" href="./css/styles.css" />
 
     <!-- Pixel Glass -->
-    <style>
-      HTML {
-        background-repeat: no-repeat;
-        background-position: 50% 0;
-
-        /* По умолчанию мобильный макет */
-        background-image: url('./images/studio-pp.jpg');
-      }
-
-      /* Планшет */
-      @media (min-width: 760px) {
-        HTML {
-          background-image: url('./images/studio-pp.jpg'); /* Планшетный макет */
-        }
-      }
-
-      /* Десктоп */
-      @media (min-width: 960px) {
-        HTML {
-          background-image: url('./images/studio-pp.jpg'); /* Десктопный макет */
-        }
-      }
-
-      BODY {
-        opacity: 0.5;
-      }
-    </style>
-
+    <link rel="stylesheet" href="./css/pixel-perfect-index.css" />
     <link rel="stylesheet" href="../node_modules/pixel-glass/styles.css" />
-    <script src="../node_modules/pixel-glass/script.js"></script>
     <!-- // Pixel Glass -->
   </head>
 
@@ -820,6 +792,9 @@
     </div>
     <script src="./scripts/modal.js"></script>
 
+    <!-- Pixel Glass -->
+    <script src="../node_modules/pixel-glass/script.js"></script>
+    <!-- // Pixel Glass -->
     <!-- <noscript>
       Для корректной работы страницы разрешите браузеру выполнение скриптов
     </noscript> -->
