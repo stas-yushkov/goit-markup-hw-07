@@ -6,7 +6,7 @@
   --primary-color: #757575; /* primary-color text */
   --white-color: #ffffff; /* white-color for some text */
   --border-color: #ececec; /* border */
-  --border-color: #eeeeee; /* Border-color for portfolio */
+  --portfolio-border-color: #eeeeee; /* Border-color for portfolio */
   --modal-input-border-color: rgba(33, 33, 33, 0.2);
   --secondary-background-color: #f5f4fa; /* bg some buttons */
   --address-primary-color: rgba(255, 255, 255, 0.6); /* address-primary-color */
@@ -42,13 +42,13 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.714285;
   letter-spacing: 0.03em;
   background-color: var(--white-color);
   color: var(--primary-color);
 }
 
-/* reset margins for headings & paragraphs */
+/* reset margins for headings, paragraphs, lists */
 h1,
 h2,
 h3,
@@ -90,13 +90,6 @@ ul {
 .header {
   position: relative;
 
-  /* position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1; */
-
-  /* margin-top: 5px; */
   background-color: var(--white-color);
   border-bottom: 1px solid var(--border-color);
 }
@@ -104,10 +97,11 @@ ul {
 .container {
   display: flex;
   width: 1200px; /* TODO: @width в будущем переделать под адаптив@ сделать "max-width: 1200px;" и пофиксить все что поплывет при изменении вьюпорта */
-  padding-left: 15px;
-  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+
+  padding-left: 15px;
+  padding-right: 15px;
   align-items: center;
 }
 
@@ -164,7 +158,7 @@ ul {
   font-size: 14px;
   color: var(--secondary-color);
   font-weight: 500;
-  line-height: 1.1721;
+  line-height: 1.142857;
 
   /* line-height: 1.1429; */
   letter-spacing: 0.02em;
@@ -248,7 +242,12 @@ ul {
 .logo:focus {
   outline: none;
 
-  /* text-shadow: var(--button-shadow); */
+  /* text-shadow: 0px 1px 3px currentColor; */
+}
+
+.logo--footer {
+  margin-right: 0;
+  margin-bottom: 20px;
 }
 
 .logo__part--header {
@@ -258,18 +257,6 @@ ul {
 .logo__part--footer {
   color: var(--white-color);
 } /* end of Logo styles */
-
-.logo--footer {
-  margin-right: 0;
-  margin-bottom: 20px;
-}
-
-.footer .logo:hover,
-.footer .logo:focus {
-  outline: none;
-
-  /* text-shadow: var(--box-shadow); */
-}
 
 .address-list {
   display: flex;
@@ -339,6 +326,10 @@ ul {
   padding-bottom: 94px;
 }
 
+.section--team {
+  background-color: var(--secondary-background-color);
+}
+
 .section__title {
   margin-bottom: 50px;
   font-weight: 700;
@@ -373,9 +364,8 @@ ul {
   margin-top: var(--grid-gap);
   margin-left: var(--grid-gap);
 
-  box-shadow: var(--box-shadow);
-
-  border-radius: 4px;
+  /* border-radius: 4px;
+  box-shadow: var(--box-shadow); */
 
   background-color: var(--white-color);
 }
@@ -392,6 +382,8 @@ ul {
 
   margin-top: var(--grid-gap);
   margin-left: var(--grid-gap);
+
+  /* background-color: var(--white-color); */
 }
 
 .grid__item--clients {
@@ -408,13 +400,13 @@ ul {
   text-align: center;
   box-shadow: none;
 
-  background-color: var(--white-color);
+  /* background-color: var(--white-color); */
 
   /* width: 270px; */
 }
 
 .grid__item--portfolio {
-  background-color: var(--white-color);
+  /* background-color: var(--white-color); */
 
   /* width: 370px; */
   flex-basis: calc(100% / 3 - var(--grid-gap));
@@ -425,24 +417,20 @@ ul {
   /* border: 1px solid var(--border-color); */
 }
 
-/* Самая простая техника отзывчивых изображений card-thumb */
-.card-thumb {
+.card {
+  background-color: var(--white-color);
+  max-width: 270px;
+}
+
+.card--features {
+}
+
+/* Самая простая техника отзывчивых изображений card__thumb */
+.card__thumb {
   display: block;
 }
 
-/* delletes indents for inline images */
-img {
-  display: block; /* убивает зазор в 1/4em строчного элемента картинки просто делая ее блочным */
-
-  max-width: 100%;
-
-  /* высоту для современных браузеров ставить тут не обязательно */
-  height: 100%;
-
-  object-fit: cover;
-}
-
-.features .card-thumb {
+.card__thumb--features {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -456,6 +444,22 @@ img {
 
   border-radius: 4px;
   background-color: var(--secondary-background-color);
+}
+
+.team .card__thumb {
+  max-height: 260px;
+}
+
+/* delletes indents for inline images */
+img {
+  display: block; /* убивает зазор в 1/4em строчного элемента картинки просто делая ее блочным */
+
+  max-width: 100%;
+
+  /* высоту для современных браузеров ставить тут не обязательно */
+  height: 100%;
+
+  object-fit: cover;
 }
 
 .card-content {
@@ -579,19 +583,6 @@ img {
   color: var(--secondary-color);
 }
 
-.team {
-  background-color: var(--secondary-background-color);
-}
-
-.team .card-thumb {
-  max-height: 260px;
-}
-
-.card {
-  background-color: var(--white-color);
-  max-width: 270px;
-}
-
 .portfolio-item-link {
   display: block;
   color: var(--primary-color);
@@ -624,12 +615,11 @@ img {
 .portfolio-text {
   padding: 20px 24px;
 
-  border-bottom: 1px solid var(--border-color);
-  border-left: 1px solid var(--border-color);
-  border-right: 1px solid var(--border-color);
+  border: 1px solid var(--portfolio-border-color);
+  border-top: none;
 }
 
-.card-thumb--portfolio {
+.card__thumb--portfolio {
   position: relative;
   max-height: 294px;
   overflow: hidden;
@@ -689,7 +679,7 @@ img {
 } */
 
 /* 
-.portfolio .card-thumb::after {
+.portfolio .card__thumb::after {
   content: '';
   display: block;
   position: absolute;
@@ -756,7 +746,7 @@ img {
   padding-top: 6px;
 }
 
-.about .card-thumb {
+.about .card__thumb {
   position: relative;
   max-height: 294px;
 }
