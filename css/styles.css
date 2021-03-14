@@ -406,10 +406,7 @@ ul {
 }
 
 .grid__item--portfolio {
-  /* background-color: var(--white-color); */
-
-  /* width: 370px; */
-  flex-basis: calc(100% / 3 - var(--grid-gap));
+  flex-basis: calc(100% / 3 - var(--grid-gap)); /* width: 370px; */
 
   margin-top: var(--grid-gap);
   margin-left: var(--grid-gap);
