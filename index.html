@@ -65,22 +65,24 @@
 
   <body>
     <header class="header">
-      <div class="container container--header">
+      <div class="container header__container">
         <nav class="nav">
           <a href="./index.html" lang="en" class="logo link">
-            Web<span class="logo__part logo__part--header">Studio</span>
+            Web<span class="logo-part">Studio</span>
           </a>
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="./index.html" class="nav__link current link">Студия</a>
+          <ul class="nav-list">
+            <li class="nav-list-item">
+              <a href="./index.html" class="nav-link current-page link"
+                >Студия</a
+              >
             </li>
 
-            <li class="nav__item">
-              <a href="./portfolio.html" class="nav__link link">Портфолио</a>
+            <li class="nav-list-item">
+              <a href="./portfolio.html" class="nav-link link">Портфолио</a>
             </li>
 
-            <li class="nav__item">
-              <a href="#contacts" class="nav__link link">Контакты</a>
+            <li class="nav-list-item">
+              <a href="#contacts" class="nav-link link">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -88,16 +90,16 @@
           <a
             href="mailto:info@devstudio.com"
             lang="en"
-            class="address-list__item link"
+            class="address-item link"
           >
-            <svg class="address-list__icon" width="16" height="12">
+            <svg class="address-icon" width="16" height="12">
               <use href="./images/icons.svg#envelope"></use>
             </svg>
             info@devstudio.com
           </a>
 
-          <a href="tel:+380961111111" class="address-list__item link">
-            <svg class="address-list__icon" width="10" height="16">
+          <a href="tel:+380961111111" class="address-item link">
+            <svg class="address-icon" width="10" height="16">
               <use href="./images/icons.svg#smartphone"></use>
             </svg>
             +38&nbsp;096&nbsp;111&nbsp;11&nbsp;11
@@ -124,66 +126,59 @@
       <!--features section-->
       <section class="features section">
         <div class="container">
-          <h2 class="section__title visually-hidden">Наши ценности</h2>
-          <ul class="grid">
-            <li class="grid__item grid__item--features">
-              <div class="card">
-                <div class="card__thumb card__thumb--features">
-                  <svg height="70" width="70">
-                    <use href="./images/icons.svg#antenna-1"></use>
-                  </svg>
-                </div>
-                <h3 class="features-title uppercase">Внимание к деталям</h3>
-                <p>
-                  Идейные соображения, а также начало повседневной работы по
-                  формированию позиции.
-                </p>
+          <!-- <div class="wrapper"> -->
+          <h2 class="visually-hidden">Наши ценности</h2>
+          <ul class="card-set">
+            <li class="card">
+              <div class="card-thumb">
+                <svg height="70" width="70">
+                  <use href="./images/icons.svg#antenna-1"></use>
+                </svg>
               </div>
+              <h3 class="features-title uppercase">Внимание к деталям</h3>
+              <p>
+                Идейные соображения, а также начало повседневной работы по
+                формированию позиции.
+              </p>
             </li>
 
-            <li class="grid__item grid__item--features">
-              <div class="card">
-                <div class="card__thumb card__thumb--features">
-                  <svg height="70" width="70">
-                    <use href="./images/icons.svg#clock-1"></use>
-                  </svg>
-                </div>
-                <h3 class="features-title uppercase">Пунктуальность</h3>
-                <p>
-                  Задача организации, в особенности же рамки и место обучения
-                  кадров влечёт за собой.
-                </p>
+            <li class="card">
+              <div class="card-thumb">
+                <svg height="70" width="70">
+                  <use href="./images/icons.svg#clock-1"></use>
+                </svg>
               </div>
+              <h3 class="features-title uppercase">Пунктуальность</h3>
+              <p>
+                Задача организации, в особенности же рамки и место обучения
+                кадров влечёт за собой.
+              </p>
             </li>
 
-            <li class="grid__item grid__item--features">
-              <div class="card">
-                <div class="card__thumb card__thumb--features">
-                  <svg height="70" width="70">
-                    <use href="./images/icons.svg#diagram-1"></use>
-                  </svg>
-                </div>
-                <h3 class="features-title uppercase">Планирование</h3>
-                <p>
-                  Равным образом консультация с широким активом в значительной
-                  степени обуславливает.
-                </p>
+            <li class="card">
+              <div class="card-thumb">
+                <svg height="70" width="70">
+                  <use href="./images/icons.svg#diagram-1"></use>
+                </svg>
               </div>
+              <h3 class="features-title uppercase">Планирование</h3>
+              <p>
+                Равным образом консультация с широким активом в значительной
+                степени обуславливает.
+              </p>
             </li>
 
-            <li class="grid__item grid__item--features">
-              <div class="card">
-                <div class="card__thumb card__thumb--features">
-                  <svg height="70" width="70">
-                    <use href="./images/icons.svg#astronaut-1"></use>
-                  </svg>
-                </div>
-                <h3 class="features-title uppercase">Современные технологии</h3>
-                <p>
-                  Значимость этих проблем настолько очевидна, что реализация
-                  плановых заданий.
-                </p>
+            <li class="card">
+              <div class="card-thumb">
+                <svg height="70" width="70">
+                  <use href="./images/icons.svg#astronaut-1"></use>
+                </svg>
               </div>
+              <h3 class="features-title uppercase">Современные технологии</h3>
+              <p>
+                Значимость этих проблем настолько очевидна, что реализация
+                плановых заданий.
+              </p>
             </li>
           </ul>
           <!-- </div> -->
@@ -191,53 +186,47 @@
       </section>
       <!-- About section -->
       <section class="about section">
-        <div class="container container--about">
-          <h2 class="section__title">Чем мы занимаемся</h2>
-          <ul class="grid">
-            <li class="grid__item grid__item--about">
-              <div class="about-card">
-                <div class="card__thumb">
-                  <img
-                    class="about-image"
-                    src="./images/box-001.jpg"
-                    alt="Десктопные приложения"
-                    width="370"
-                  />
-                  <div class="overlay">
-                    <p class="overlay-text uppercase">Десктопные приложения</p>
-                  </div>
+        <div class="container">
+          <h2 class="section-title">Чем мы занимаемся</h2>
+          <ul class="card-set">
+            <li class="about-card">
+              <div class="card-thumb">
+                <img
+                  class="about-image"
+                  src="./images/box-001.jpg"
+                  alt="Десктопные приложения"
+                  width="370"
+                />
+                <div class="overlay">
+                  <p class="overlay-text uppercase">Десктопные приложения</p>
                 </div>
               </div>
             </li>
 
-            <li class="grid__item grid__item--about">
-              <div class="about-card">
-                <div class="card__thumb">
-                  <img
-                    class="about-image"
-                    src="./images/box-002.jpg"
-                    alt="Мобильные приложения"
-                    width="370"
-                  />
-                  <div class="overlay">
-                    <p class="overlay-text uppercase">Мобильные приложения</p>
-                  </div>
+            <li class="about-card">
+              <div class="card-thumb">
+                <img
+                  class="about-image"
+                  src="./images/box-002.jpg"
+                  alt="Мобильные приложения"
+                  width="370"
+                />
+                <div class="overlay">
+                  <p class="overlay-text uppercase">Мобильные приложения</p>
                 </div>
               </div>
             </li>
 
-            <li class="grid__item grid__item--about">
-              <div class="about-card">
-                <div class="card__thumb">
-                  <img
-                    class="about-image"
-                    src="./images/box-003.jpg"
-                    alt="Дизайнерские решения"
-                    width="370"
-                  />
-                  <div class="overlay">
-                    <p class="overlay-text uppercase">Дизайнерские решения</p>
-                  </div>
+            <li class="about-card">
+              <div class="card-thumb">
+                <img
+                  class="about-image"
+                  src="./images/box-003.jpg"
+                  alt="Дизайнерские решения"
+                  width="370"
+                />
+                <div class="overlay">
+                  <p class="overlay-text uppercase">Дизайнерские решения</p>
                 </div>
               </div>
             </li>
@@ -246,299 +235,291 @@
       </section>
 
       <!--team section-->
-      <section class="section section--team">
-        <div class="container container--team">
-          <h2 class="section__title">Наша команда</h2>
-          <ul class="grid">
-            <li class="grid__item">
-              <div class="card card--teammate">
-                <div class="card__thumb">
-                  <img
-                    src="./images/card-001.jpg"
-                    alt="Product Designer Игорь Демьяненко"
-                    width="270"
-                  />
-                </div>
-                <div class="card-content">
-                  <h3 class="card-title">Игорь Демьяненко</h3>
-                  <p class="card-item" lang="en">Product Designer</p>
-                  <ul class="social-links">
-                    <li class="social-links-item">
-                      <a
-                        class="social-link instagram link"
-                        href="#"
-                        rel="nofollow noopener noreferrer"
-                        target="blanc"
-                        aria-label="Instagram"
-                      >
-                        <svg height="20" width="20">
-                          <use href="./images/icons.svg#instagram-2"></use>
-                        </svg>
-                      </a>
-                    </li>
+      <section class="team section">
+        <div class="container">
+          <h2 class="section-title">Наша команда</h2>
+          <ul class="card-set">
+            <li class="card-set-item">
+              <div class="card-thumb">
+                <img
+                  src="./images/card-001.jpg"
+                  alt="Product Designer Игорь Демьяненко"
+                  width="270"
+                />
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Игорь Демьяненко</h3>
+                <p class="card-item" lang="en">Product Designer</p>
+                <ul class="social-links">
+                  <li class="social-links-item">
+                    <a
+                      class="social-link instagram link"
+                      href="#"
+                      rel="nofollow noopener noreferrer"
+                      target="blanc"
+                      aria-label="Instagram"
+                    >
+                      <svg height="20" width="20">
+                        <use href="./images/icons.svg#instagram-2"></use>
+                      </svg>
+                    </a>
+                  </li>
 
-                    <li class="social-links-item">
-                      <a
-                        class="social-link twitter link"
-                        href="#"
-                        rel="nofollow noopener noreferrer"
-                        target="blanc"
-                        aria-label="Twitter"
-                      >
-                        <svg height="20" width="20">
-                          <use href="./images/icons.svg#twitter-1"></use>
-                        </svg>
-                      </a>
-                    </li>
+                  <li class="social-links-item">
+                    <a
+                      class="social-link twitter link"
+                      href="#"
+                      rel="nofollow noopener noreferrer"
+                      target="blanc"
+                      aria-label="Twitter"
+                    >
+                      <svg height="20" width="20">
+                        <use href="./images/icons.svg#twitter-1"></use>
+                      </svg>
+                    </a>
+                  </li>
 
-                    <li class="social-links-item">
-                      <a
-                        class="social-link facebook link"
-                        href="#"
-                        rel="nofollow noopener noreferrer"
-                        target="blanc"
-                        aria-label="Facebook"
-                      >
-                        <svg height="20" width="20">
-                          <use href="./images/icons.svg#facebook-1"></use>
-                        </svg>
-                      </a>
-                    </li>
+                  <li class="social-links-item">
+                    <a
+                      class="social-link facebook link"
+                      href="#"
+                      rel="nofollow noopener noreferrer"
+                      target="blanc"
+                      aria-label="Facebook"
+                    >
+                      <svg height="20" width="20">
+                        <use href="./images/icons.svg#facebook-1"></use>
+                      </svg>
+                    </a>
+                  </li>
 
-                    <li class="social-links-item">
-                      <a
-                        class="social-link linkedin link"
-                        href="#"
-                        rel="nofollow noopener noreferrer"
-                        target="blanc"
-                        aria-label="Linkedin"
-                      >
-                        <svg height="20" width="20">
-                          <use href="./images/icons.svg#linkedin-1"></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+                  <li class="social-links-item">
+                    <a
+                      class="social-link linkedin link"
+                      href="#"
+                      rel="nofollow noopener noreferrer"
+                      target="blanc"
+                      aria-label="Linkedin"
+                    >
+                      <svg height="20" width="20">
+                        <use href="./images/icons.svg#linkedin-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </li>
 
-            <li class="grid__item">
-              <div class="card card--teammate">
-                <div class="card__thumb">
-                  <img
-                    src="./images/card-002.jpg"
-                    alt="Frontend Developer Ольга Репина"
-                    width="270"
-                  />
-                </div>
-                <div class="card-content">
-                  <h3 class="card-title">Ольга Репина</h3>
-                  <p class="card-item" lang="en">Frontend Developer</p>
-                  <ul class="social-links">
-                    <li class="social-links-item">
-                      <a
-                        class="social-link instagram link"
-                        href="#"
-                        rel="nofollow noopener noreferrer"
-                        target="blanc"
-                        aria-label="Instagram"
-                      >
-                        <svg height="20" width="20">
-                          <use href="./images/icons.svg#instagram-2"></use>
-                        </svg>
-                      </a>
-                    </li>
+            <li class="card-set-item">
+              <div class="card-thumb">
+                <img
+                  src="./images/card-002.jpg"
+                  alt="Frontend Developer Ольга Репина"
+                  width="270"
+                />
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Ольга Репина</h3>
+                <p class="card-item" lang="en">Frontend Developer</p>
+                <ul class="social-links">
+                  <li class="social-links-item">
+                    <a
+                      class="social-link instagram link"
+                      href="#"
+                      rel="nofollow noopener noreferrer"
+                      target="blanc"
+                      aria-label="Instagram"
+                    >
+                      <svg height="20" width="20">
+                        <use href="./images/icons.svg#instagram-2"></use>
+                      </svg>
+                    </a>
+                  </li>
 
-                    <li class="social-links-item">
-                      <a
-                        class="social-link twitter link"
-                        href="#"
-                        rel="nofollow noopener noreferrer"
-                        target="blanc"
-                        aria-label="Twitter"
-                      >
-                        <svg height="20" width="20">
-                          <use href="./images/icons.svg#twitter-1"></use>
-                        </svg>
-                      </a>
-                    </li>
+                  <li class="social-links-item">
+                    <a
+                      class="social-link twitter link"
+                      href="#"
+                      rel="nofollow noopener noreferrer"
+                      target="blanc"
+                      aria-label="Twitter"
+                    >
+                      <svg height="20" width="20">
+                        <use href="./images/icons.svg#twitter-1"></use>
+                      </svg>
+                    </a>
+                  </li>
 
-                    <li class="social-links-item">
-                      <a
-                        class="social-link facebook link"
-                        href="#"
-                        rel="nofollow noopener noreferrer"
-                        target="blanc"
-                        aria-label="Facebook"
-                      >
-                        <svg height="20" width="20">
-                          <use href="./images/icons.svg#facebook-1"></use>
-                        </svg>
-                      </a>
-                    </li>
+                  <li class="social-links-item">
+                    <a
+                      class="social-link facebook link"
+                      href="#"
+                      rel="nofollow noopener noreferrer"
+                      target="blanc"
+                      aria-label="Facebook"
+                    >
+                      <svg height="20" width="20">
+                        <use href="./images/icons.svg#facebook-1"></use>
+                      </svg>
+                    </a>
+                  </li>
 
-                    <li class="social-links-item">
-                      <a
-                        class="social-link linkedin link"
-                        href="#"
-                        rel="nofollow noopener noreferrer"
-                        target="blanc"
-                        aria-label="Linkedin"
-                      >
-                        <svg height="20" width="20">
-                          <use href="./images/icons.svg#linkedin-1"></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+                  <li class="social-links-item">
+                    <a
+                      class="social-link linkedin link"
+                      href="#"
+                      rel="nofollow noopener noreferrer"
+                      target="blanc"
+                      aria-label="Linkedin"
+                    >
+                      <svg height="20" width="20">
+                        <use href="./images/icons.svg#linkedin-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </li>
 
-            <li class="grid__item">
-              <div class="card card--teammate">
-                <div class="card__thumb">
-                  <img
-                    src="./images/card-003.jpg"
-                    alt="Marketing Николай Тарасов"
-                    width="270"
-                  />
-                </div>
-                <div class="card-content">
-                  <h3 class="card-title">Николай Тарасов</h3>
-                  <p class="card-item" lang="en">Marketing</p>
-                  <ul class="social-links">
-                    <li class="social-links-item">
-                      <a
-                        class="social-link instagram link"
-                        href="#"
-                        rel="nofollow noopener noreferrer"
-                        target="blanc"
-                        aria-label="Instagram"
-                      >
-                        <svg height="20" width="20">
-                          <use href="./images/icons.svg#instagram-2"></use>
-                        </svg>
-                      </a>
-                    </li>
+            <li class="card-set-item">
+              <div class="card-thumb">
+                <img
+                  src="./images/card-003.jpg"
+                  alt="Marketing Николай Тарасов"
+                  width="270"
+                />
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Николай Тарасов</h3>
+                <p class="card-item" lang="en">Marketing</p>
+                <ul class="social-links">
+                  <li class="social-links-item">
+                    <a
+                      class="social-link instagram link"
+                      href="#"
+                      rel="nofollow noopener noreferrer"
+                      target="blanc"
+                      aria-label="Instagram"
+                    >
+                      <svg height="20" width="20">
+                        <use href="./images/icons.svg#instagram-2"></use>
+                      </svg>
+                    </a>
+                  </li>
 
-                    <li class="social-links-item">
-                      <a
-                        class="social-link twitter link"
-                        href="#"
-                        rel="nofollow noopener noreferrer"
-                        target="blanc"
-                        aria-label="Twitter"
-                      >
-                        <svg height="20" width="20">
-                          <use href="./images/icons.svg#twitter-1"></use>
-                        </svg>
-                      </a>
-                    </li>
+                  <li class="social-links-item">
+                    <a
+                      class="social-link twitter link"
+                      href="#"
+                      rel="nofollow noopener noreferrer"
+                      target="blanc"
+                      aria-label="Twitter"
+                    >
+                      <svg height="20" width="20">
+                        <use href="./images/icons.svg#twitter-1"></use>
+                      </svg>
+                    </a>
+                  </li>
 
-                    <li class="social-links-item">
-                      <a
-                        class="social-link facebook link"
-                        href="#"
-                        rel="nofollow noopener noreferrer"
-                        target="blanc"
-                        aria-label="Facebook"
-                      >
-                        <svg height="20" width="20">
-                          <use href="./images/icons.svg#facebook-1"></use>
-                        </svg>
-                      </a>
-                    </li>
+                  <li class="social-links-item">
+                    <a
+                      class="social-link facebook link"
+                      href="#"
+                      rel="nofollow noopener noreferrer"
+                      target="blanc"
+                      aria-label="Facebook"
+                    >
+                      <svg height="20" width="20">
+                        <use href="./images/icons.svg#facebook-1"></use>
+                      </svg>
+                    </a>
+                  </li>
 
-                    <li class="social-links-item">
-                      <a
-                        class="social-link linkedin link"
-                        href="#"
-                        rel="nofollow noopener noreferrer"
-                        target="blanc"
-                        aria-label="Linkedin"
-                      >
-                        <svg height="20" width="20">
-                          <use href="./images/icons.svg#linkedin-1"></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+                  <li class="social-links-item">
+                    <a
+                      class="social-link linkedin link"
+                      href="#"
+                      rel="nofollow noopener noreferrer"
+                      target="blanc"
+                      aria-label="Linkedin"
+                    >
+                      <svg height="20" width="20">
+                        <use href="./images/icons.svg#linkedin-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </li>
 
-            <li class="grid__item">
-              <div class="card card--teammate">
-                <div class="card__thumb">
-                  <img
-                    src="./images/card-004.jpg"
-                    alt="UI Designer Михаил Ермаков"
-                    width="270"
-                  />
-                </div>
-                <div class="card-content">
-                  <h3 class="card-title">Михаил Ермаков</h3>
-                  <p class="card-item" lang="en">UI Designer</p>
-                  <ul class="social-links">
-                    <li class="social-links-item">
-                      <a
-                        class="social-link instagram link"
-                        href="#"
-                        rel="nofollow noopener noreferrer"
-                        target="blanc"
-                        aria-label="Instagram"
-                      >
-                        <svg height="20" width="20">
-                          <use href="./images/icons.svg#instagram-2"></use>
-                        </svg>
-                      </a>
-                    </li>
+            <li class="card-set-item">
+              <div class="card-thumb">
+                <img
+                  src="./images/card-004.jpg"
+                  alt="UI Designer Михаил Ермаков"
+                  width="270"
+                />
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Михаил Ермаков</h3>
+                <p class="card-item" lang="en">UI Designer</p>
+                <ul class="social-links">
+                  <li class="social-links-item">
+                    <a
+                      class="social-link instagram link"
+                      href="#"
+                      rel="nofollow noopener noreferrer"
+                      target="blanc"
+                      aria-label="Instagram"
+                    >
+                      <svg height="20" width="20">
+                        <use href="./images/icons.svg#instagram-2"></use>
+                      </svg>
+                    </a>
+                  </li>
 
-                    <li class="social-links-item">
-                      <a
-                        class="social-link twitter link"
-                        href="#"
-                        rel="nofollow noopener noreferrer"
-                        target="blanc"
-                        aria-label="Twitter"
-                      >
-                        <svg height="20" width="20">
-                          <use href="./images/icons.svg#twitter-1"></use>
-                        </svg>
-                      </a>
-                    </li>
+                  <li class="social-links-item">
+                    <a
+                      class="social-link twitter link"
+                      href="#"
+                      rel="nofollow noopener noreferrer"
+                      target="blanc"
+                      aria-label="Twitter"
+                    >
+                      <svg height="20" width="20">
+                        <use href="./images/icons.svg#twitter-1"></use>
+                      </svg>
+                    </a>
+                  </li>
 
-                    <li class="social-links-item">
-                      <a
-                        class="social-link facebook link"
-                        href="#"
-                        rel="nofollow noopener noreferrer"
-                        target="blanc"
-                        aria-label="Facebook"
-                      >
-                        <svg height="20" width="20">
-                          <use href="./images/icons.svg#facebook-1"></use>
-                        </svg>
-                      </a>
-                    </li>
+                  <li class="social-links-item">
+                    <a
+                      class="social-link facebook link"
+                      href="#"
+                      rel="nofollow noopener noreferrer"
+                      target="blanc"
+                      aria-label="Facebook"
+                    >
+                      <svg height="20" width="20">
+                        <use href="./images/icons.svg#facebook-1"></use>
+                      </svg>
+                    </a>
+                  </li>
 
-                    <li class="social-links-item">
-                      <a
-                        class="social-link linkedin link"
-                        href="#"
-                        rel="nofollow noopener noreferrer"
-                        target="blanc"
-                        aria-label="Linkedin"
-                      >
-                        <svg height="20" width="20">
-                          <use href="./images/icons.svg#linkedin-1"></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+                  <li class="social-links-item">
+                    <a
+                      class="social-link linkedin link"
+                      href="#"
+                      rel="nofollow noopener noreferrer"
+                      target="blanc"
+                      aria-label="Linkedin"
+                    >
+                      <svg height="20" width="20">
+                        <use href="./images/icons.svg#linkedin-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </li>
           </ul>
@@ -547,10 +528,10 @@
 
       <!--clients section-->
       <section class="clients section">
-        <div class="container container--clients">
-          <h2 class="section__title">Постоянные клиенты</h2>
-          <ul class="grid">
-            <li class="grid__item grid__item--clients">
+        <div class="container">
+          <h2 class="section-title">Постоянные клиенты</h2>
+          <ul class="card-set">
+            <li class="card-set-item">
               <a
                 class="client-link link"
                 href="#"
@@ -564,7 +545,7 @@
               </a>
             </li>
 
-            <li class="grid__item grid__item--clients">
+            <li class="card-set-item">
               <a
                 class="client-link link"
                 href="#"
@@ -578,7 +559,7 @@
               </a>
             </li>
 
-            <li class="grid__item grid__item--clients">
+            <li class="card-set-item">
               <a
                 class="client-link link"
                 href="#"
@@ -592,7 +573,7 @@
               </a>
             </li>
 
-            <li class="grid__item grid__item--clients">
+            <li class="card-set-item">
               <a
                 class="client-link link"
                 href="#"
@@ -606,7 +587,7 @@
               </a>
             </li>
 
-            <li class="grid__item grid__item--clients">
+            <li class="card-set-item">
               <a
                 class="client-link link"
                 href="#"
@@ -620,7 +601,7 @@
               </a>
             </li>
 
-            <li class="grid__item grid__item--clients">
+            <li class="card-set-item">
               <a
                 class="client-link link"
                 href="#"
@@ -639,15 +620,15 @@
     </main>
 
     <footer class="footer">
-      <div class="container container--footer">
-        <div class="footer-address-wrapper">
-          <a href="./index.html" lang="en" class="logo logo--footer link">
-            Web<span class="logo__part logo__part--footer">Studio</span>
+      <div class="container">
+        <div class="footer-address-sidebar">
+          <a href="./index.html" lang="en" class="logo link">
+            Web<span class="logo-part">Studio</span>
           </a>
-          <address id="contacts" class="address-list footer__address-list">
+          <address id="contacts" class="address-list">
             <a
               href="https://goo.gl/maps/3aquBBFfu6E2QgFt6"
-              class="address-list__item address-list__item--footer address-list__item--map link"
+              class="address-item map link"
               rel="nofollow noopener noreferrer"
               target="blanc"
             >
@@ -657,21 +638,18 @@
             <a
               href="mailto:info@example.com"
               lang="en"
-              class="address-list__item address-list__item--footer link"
+              class="address-item link"
             >
               info@example.com
             </a>
 
-            <a
-              href="tel:+380991111111"
-              class="address-list__item address-list__item--footer link"
-            >
+            <a href="tel:+380991111111" class="address-item link">
               +38&nbsp;099&nbsp;111&nbsp;11&nbsp;11
             </a>
           </address>
         </div>
 
-        <div class="footer-socials-wrapper uppercase">
+        <div class="footer-socials-sidebar uppercase">
           <p>присоединяйтесь</p>
 
           <ul class="social-links">
