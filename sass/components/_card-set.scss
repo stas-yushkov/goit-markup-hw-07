@@ -1,0 +1,35 @@
+/* adaptive flex-grid (card-set, card-set-item) */
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+
+  /* reset user agent styles */
+  padding: 0;
+  margin: 0;
+
+  /* Remove markers from lists */
+  list-style: none;
+
+  /* compensation for .card margins */
+  margin-top: calc(-1 * var(--card-set-gap));
+  margin-left: calc(-1 * var(--card-set-gap));
+}
+
+.card-set-item {
+  flex-basis: calc(
+    100% / 4 - var(--card-set-gap)
+  ); /* "100% / 4" - where "4" is count of items in row, so every card will got 1/4 parrent width but - var(--card-set-gap)  */
+
+  margin-top: var(--card-set-gap);
+  margin-left: var(--card-set-gap);
+
+  /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2); */
+  box-shadow: var(--box-shadow);
+
+  border-radius: 4px;
+  text-align: center;
+
+  background-color: var(--white-color);
+
+  /* width: 270px; */
+}

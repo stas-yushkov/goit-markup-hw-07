@@ -1,0 +1,21 @@
+
+.filter-set {
+  display: flex;
+
+  /* Remove markers from lists */
+  list-style: none;
+
+  /* margin-left: auto;
+  margin-right: auto; */
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.filter-item:not(:last-child) {
+  margin-right: 8px;
+
+  /* flex-basis: calc(100% / 3 - var(--card-set-gap));
+
+  margin-top: var(--card-set-gap);
+  margin-left: var(--card-set-gap); */
+}
