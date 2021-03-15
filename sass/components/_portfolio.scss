@@ -7,11 +7,15 @@
 .flex-grid__item--portfolio {
   background-color: var(--white-color);
 
-  /* width: 370px; */
   flex-basis: calc(100% / 3 - var(--flex-grid-gap));
 
   margin-top: var(--flex-grid-gap);
   margin-left: var(--flex-grid-gap);
+  box-shadow: none;
+}
+
+.card--portfolio{
+  min-width: 370px;
 
 }
 
@@ -46,6 +50,7 @@
 
 .portfolio-text {
   padding: 20px 24px;
+  text-align: left;
 
   border-bottom: 1px solid var(--portfolio-border-color);
   border-left: 1px solid var(--portfolio-border-color);

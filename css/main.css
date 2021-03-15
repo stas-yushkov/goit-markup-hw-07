@@ -519,11 +519,16 @@ img {
 
 .flex-grid__item--portfolio {
   background-color: var(--white-color);
-  /* width: 370px; */
   -ms-flex-preferred-size: calc(100% / 3 - var(--flex-grid-gap));
       flex-basis: calc(100% / 3 - var(--flex-grid-gap));
   margin-top: var(--flex-grid-gap);
   margin-left: var(--flex-grid-gap);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.card--portfolio {
+  min-width: 370px;
 }
 
 .portfolio-item-link {
@@ -562,6 +567,7 @@ img {
 
 .portfolio-text {
   padding: 20px 24px;
+  text-align: left;
   border-bottom: 1px solid var(--portfolio-border-color);
   border-left: 1px solid var(--portfolio-border-color);
   border-right: 1px solid var(--portfolio-border-color);
