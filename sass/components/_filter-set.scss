@@ -14,8 +14,8 @@
 .filter-item:not(:last-child) {
   margin-right: 8px;
 
-  /* flex-basis: calc(100% / 3 - var(--card-set-gap));
+  /* flex-basis: calc(100% / 3 - var(--flex-grid-gap));
 
-  margin-top: var(--card-set-gap);
-  margin-left: var(--card-set-gap); */
+  margin-top: var(--flex-grid-gap);
+  margin-left: var(--flex-grid-gap); */
 }

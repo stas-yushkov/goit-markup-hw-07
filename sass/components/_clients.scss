@@ -1,5 +1,4 @@
-
-.clients .container {
+.clients__container {
   flex-direction: column;
   align-items: center;
 }
@@ -26,13 +25,13 @@
   outline: none;
 }
 
-.clients .card-set-item {
+.clients .flex-grid__item {
   flex-basis: calc(
-    100% / 6 - var(--card-set-gap)
-  ); /* "100% / 4" - where "4" is count of items in row, so every card will got 1/4 parrent width but - var(--card-set-gap)  */
+    100% / 6 - var(--flex-grid-gap)
+  ); /* "100% / 4" - where "4" is count of items in row, so every card will got 1/4 parrent width but - var(--flex-grid-gap)  */
 
-  margin-top: var(--card-set-gap);
-  margin-left: var(--card-set-gap);
+  margin-top: var(--flex-grid-gap);
+  margin-left: var(--flex-grid-gap);
 
   /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2); */
