@@ -23,6 +23,7 @@
   transition-property: color;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
+  
   &:hover,
   &:focus {
     color: var(--accent-color);
