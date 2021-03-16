@@ -27,11 +27,10 @@
   background-color: var(--accent-color);
   border: none;
   text-align: center;
-}
-
-.email-form .button:hover,
-.email-form .button:focus {
-  background-color: var(--hover-background-color);
+  &:hover,
+  &:focus {
+    background-color: var(--hover-background-color);
+  }  
 }
 
 .email-form-icon {
@@ -46,6 +45,11 @@
 .email-form .input:hover,
 .email-form .input:focus {
   border: 1px solid var(--accent-color);
+
+  
+  transition-property: border-color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
 }
 
 .email-form .input::placeholder {

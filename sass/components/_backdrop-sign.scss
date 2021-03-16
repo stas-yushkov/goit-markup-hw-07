@@ -82,13 +82,13 @@
   transition-property: color;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
+  
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .close-button > svg {
   fill: currentColor;
-}
-
-.close-button:hover,
-.close-button:focus {
-  color: var(--accent-color);
 }

@@ -6,14 +6,16 @@
 .footer .logo {
   margin-right: 0;
   margin-bottom: 20px;
+  
+  &:hover,
+  &:focus {
+    outline: none;
+
+    /* text-shadow: var(--box-shadow); */
+  }  
 }
 
-.footer .logo:hover,
-.footer .logo:focus {
-  outline: none;
 
-  /* text-shadow: var(--box-shadow); */
-}
 
 .footer {
   padding-top: 60px;
@@ -75,10 +77,12 @@
 .footer .social-link {
   background-color: var(--footer-socials-bg-color);
   fill: var(--white-color);
-}
 
-.footer .social-link:focus,
-.footer .social-link:hover {
-  background-color: var(--accent-color);
-  outline: none;
+  
+  &:focus,
+  &:hover {
+    background-color: var(--accent-color);
+    outline: none;
+  }
+
 }

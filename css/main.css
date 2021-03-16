@@ -332,15 +332,14 @@ img {
   /* transition-property: color, background-color, box-shadow;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function); */
+  /* end of Hero section */
 }
 
-.hero .button:hover,
-.hero .button:focus {
+.hero .button:hover, .hero .button:focus {
   background-color: var(--hover-background-color);
   outline: none;
 }
 
-/* end of Hero section */
 .button {
   font-weight: 500;
   color: var(--secondary-color);
@@ -362,18 +361,10 @@ img {
           transition-timing-function: var(--transition-timing-function);
 }
 
-.button:hover,
-.button:focus {
-  color: var(--white-color);
-  background-color: var(--accent-color);
-  outline: none;
-  -webkit-box-shadow: var(--button-shadow);
-          box-shadow: var(--button-shadow);
-}
-
-.button:hover,
-.button:focus {
+.button:hover, .button:focus {
   background-color: var(--hover-background-color);
+  color: var(--white-color);
+  outline: none;
   -webkit-box-shadow: var(--button-shadow);
           box-shadow: var(--button-shadow);
 }
@@ -393,8 +384,7 @@ img {
   transition-timing-function: var(--transition-timing-function); */
 }
 
-.logo:hover,
-.logo:focus {
+.logo:hover, .logo:focus {
   outline: none;
   /* text-shadow: var(--button-shadow); */
 }
@@ -414,8 +404,7 @@ img {
           transition-timing-function: var(--transition-timing-function);
 }
 
-.current-page:hover,
-.current-page:focus {
+.current-page:hover, .current-page:focus {
   color: var(--hover-background-color);
   /* text-shadow: var(--button-shadow); */
 }
@@ -429,15 +418,6 @@ img {
   background-color: var(--hover-background-color);
 }
 
-/* 
-.current-page::after,
-.current-page::after {
-  content: '';
-  display: flex;
-  height: 10px;
-  width: 10px;
-  background-color: tomato;
-} */
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -544,8 +524,7 @@ img {
           transition-timing-function: var(--transition-timing-function);
 }
 
-.portfolio__link:hover,
-.portfolio__link:focus {
+.portfolio__link:hover, .portfolio__link:focus {
   outline: none;
   -webkit-box-shadow: var(--portfolio-box-shadow);
           box-shadow: var(--portfolio-box-shadow);
@@ -625,8 +604,7 @@ img {
   margin-bottom: 20px;
 }
 
-.footer .logo:hover,
-.footer .logo:focus {
+.footer .logo:hover, .footer .logo:focus {
   outline: none;
   /* text-shadow: var(--box-shadow); */
 }
@@ -720,8 +698,7 @@ img {
   fill: var(--white-color);
 }
 
-.footer .social-link:focus,
-.footer .social-link:hover {
+.footer .social-link:focus, .footer .social-link:hover {
   background-color: var(--accent-color);
   outline: none;
 }
@@ -764,14 +741,13 @@ img {
           transition-timing-function: var(--transition-timing-function);
 }
 
-.address-item:last-child {
-  margin-right: 0;
-}
-
-.address-item:hover,
-.address-item:focus {
+.address-item:hover, .address-item:focus {
   color: var(--accent-color);
   outline: none;
+}
+
+.address-item:last-child {
+  margin-right: 0;
 }
 
 .address-icon {
@@ -893,8 +869,7 @@ img {
           transition-timing-function: var(--transition-timing-function);
 }
 
-.social-link:hover,
-.social-link:focus {
+.social-link:hover, .social-link:focus {
   background-color: var(--accent-color);
   fill: var(--white-color);
   outline: none;
@@ -933,8 +908,7 @@ img {
           transition-timing-function: var(--transition-timing-function);
 }
 
-.client-link:hover,
-.client-link:focus {
+.client-link:hover, .client-link:focus {
   border-color: var(--accent-color);
   fill: var(--accent-color);
   outline: none;
@@ -1056,13 +1030,12 @@ img {
           transition-timing-function: var(--transition-timing-function);
 }
 
-.close-button > svg {
-  fill: currentColor;
+.close-button:hover, .close-button:focus {
+  color: var(--accent-color);
 }
 
-.close-button:hover,
-.close-button:focus {
-  color: var(--accent-color);
+.close-button > svg {
+  fill: currentColor;
 }
 
 .modal-form-wrapper {
@@ -1282,8 +1255,7 @@ img {
   text-align: center;
 }
 
-.email-form .button:hover,
-.email-form .button:focus {
+.email-form .button:hover, .email-form .button:focus {
   background-color: var(--hover-background-color);
 }
 
@@ -1298,6 +1270,12 @@ img {
 .email-form .input:hover,
 .email-form .input:focus {
   border: 1px solid var(--accent-color);
+  -webkit-transition-property: border-color;
+  transition-property: border-color;
+  -webkit-transition-duration: var(--transition-duration);
+          transition-duration: var(--transition-duration);
+  -webkit-transition-timing-function: var(--transition-timing-function);
+          transition-timing-function: var(--transition-timing-function);
 }
 
 .email-form .input::-webkit-input-placeholder {

@@ -70,11 +70,13 @@
   /* transition-property: color, background-color, box-shadow;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function); */
+
+  
+
+  &:hover,
+  &:focus {
+    background-color: var(--hover-background-color);
+    outline: none;
+  } /* end of Hero section */
+
 }
-
-
-.hero .button:hover,
-.hero .button:focus {
-  background-color: var(--hover-background-color);
-  outline: none;
-} /* end of Hero section */

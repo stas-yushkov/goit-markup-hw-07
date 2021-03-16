@@ -26,12 +26,14 @@
   transition-property: box-shadow;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
+
+  
+  &:hover,
+  &:focus {
+    outline: none;
+    box-shadow: var(--portfolio-box-shadow);
 }
 
-.portfolio__link:hover,
-.portfolio__link:focus {
-  outline: none;
-  box-shadow: var(--portfolio-box-shadow);
 }
 
 .portfolio-title {

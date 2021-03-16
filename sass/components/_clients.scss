@@ -16,14 +16,16 @@
   transition-property: fill, border-color;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+    fill: var(--accent-color);
+    outline: none;
+  }
+
 }
 
-.client-link:hover,
-.client-link:focus {
-  border-color: var(--accent-color);
-  fill: var(--accent-color);
-  outline: none;
-}
 
 .clients .flex-grid__item {
   flex-basis: calc(

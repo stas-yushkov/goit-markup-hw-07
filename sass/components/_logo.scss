@@ -15,15 +15,14 @@
   /* transition-property: text-shadow;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function); */
+
+  &:hover,
+  &:focus {
+    outline: none;
+
+    /* text-shadow: var(--button-shadow); */
+  }
 }
-
-.logo:hover,
-.logo:focus {
-  outline: none;
-
-  /* text-shadow: var(--button-shadow); */
-}
-
 
 .logo__part {
   color: var(--black-color);

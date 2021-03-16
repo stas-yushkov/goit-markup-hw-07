@@ -23,18 +23,16 @@
   transition-property: color;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    outline: none;
+  }
 }
 
 .address-item:last-child {
   margin-right: 0;
 }
-
-.address-item:hover,
-.address-item:focus {
-  color: var(--accent-color);
-  outline: none;
-}
-
 
 .address-icon {
   margin-right: 10px;
