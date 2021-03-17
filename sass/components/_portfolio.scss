@@ -1,5 +1,3 @@
-
-
 .portfolio__container {
   flex-direction: column;
 }
@@ -14,9 +12,8 @@
   box-shadow: none;
 }
 
-.portfolio__card{
+.portfolio__card {
   min-width: 370px;
-
 }
 
 .portfolio__link {
@@ -27,13 +24,11 @@
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
 
-  
   &:hover,
   &:focus {
     outline: none;
     box-shadow: var(--portfolio-box-shadow);
-}
-
+  }
 }
 
 .portfolio-title {
@@ -73,6 +68,7 @@
   width: 100%;
   height: 100%;
   padding: 64px 24px;
+  text-align: left;
 
   /* padding: 32px 64px;*/
 
@@ -97,5 +93,4 @@
   letter-spacing: 0.03em;
 
   color: var(--white-color);
-
 }

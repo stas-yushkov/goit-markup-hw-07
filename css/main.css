@@ -565,6 +565,7 @@ img {
   width: 100%;
   height: 100%;
   padding: 64px 24px;
+  text-align: left;
   /* padding: 32px 64px;*/
   /* opacity: 0; */
   background: var(--portfolio-overlay-color);
