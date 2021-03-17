@@ -7,9 +7,6 @@
   padding: 0;
   margin: 0;
 
-  /* Remove markers from lists */
-  list-style: none;
-
   /* compensation for .card margins */
   margin-top: calc(-1 * var(--flex-grid-gap));
   margin-left: calc(-1 * var(--flex-grid-gap));

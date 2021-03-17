@@ -50,7 +50,7 @@
 
 /* Common font, color, bg-color */
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -76,6 +76,11 @@ ul {
 .link {
   text-decoration: none;
   font-style: normal;
+}
+
+/* Remove markers from lists */
+.list {
+  list-style: none;
 }
 
 /* Transform text to uppercase */
@@ -134,13 +139,10 @@ ul {
           align-items: center;
 }
 
-/* nav */
 .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  /* Remove markers from lists */
-  list-style: none;
 }
 
 .nav__item:not(.nav__item:last-child) {
@@ -172,6 +174,10 @@ ul {
   outline: none;
 }
 
+.nav__link:hover::after, .nav__link:hover::after, .nav__link:focus::after, .nav__link:focus::after {
+  background-color: var(--accent-color);
+}
+
 .nav__link::after {
   content: '';
   display: block;
@@ -189,11 +195,6 @@ ul {
           transition-timing-function: var(--transition-timing-function);
 }
 
-.nav__link:focus::after,
-.nav__link:hover::after {
-  background-color: var(--accent-color);
-}
-
 /* adaptive flex-grid (flex-grid, flex-grid__item) */
 .flex-grid {
   display: -webkit-box;
@@ -204,8 +205,6 @@ ul {
   /* reset user agent styles */
   padding: 0;
   margin: 0;
-  /* Remove markers from lists */
-  list-style: none;
   /* compensation for .card margins */
   margin-top: calc(-1 * var(--flex-grid-gap));
   margin-left: calc(-1 * var(--flex-grid-gap));
@@ -818,8 +817,6 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  /* Remove markers from lists */
-  list-style: none;
   /* margin-left: auto;
   margin-right: auto; */
   -webkit-box-pack: center;
@@ -1293,5 +1290,59 @@ img {
 
 .email-form .input::placeholder {
   color: var(--address-primary-color);
+}
+
+HTML {
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  /* По умолчанию мобильный макет */
+  background-image: url("../images/studio-pp.jpg");
+}
+
+/* Планшет */
+@media (min-width: 760px) {
+  HTML {
+    background-image: url("../images/studio-pp.jpg");
+    /* Планшетный макет */
+  }
+}
+
+/* Десктоп */
+@media (min-width: 960px) {
+  HTML {
+    background-image: url("../images/studio-pp.jpg");
+    /* Десктопный макет */
+  }
+}
+
+BODY {
+  opacity: 0.5;
+}
+
+HTML {
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  /* По умолчанию мобильный макет */
+  background-image: url("../images/portfolio-pp.jpg");
+}
+
+/* Планшет */
+@media (min-width: 760px) {
+  HTML {
+    background-image: url("../images/portfolio-pp.jpg");
+    /* Планшетный макет */
+  }
+}
+
+/* Десктоп */
+@media (min-width: 960px) {
+  HTML {
+    background-image: url("../images/portfolio-pp.jpg");
+    /* Десктопный макет */
+  }
+}
+
+BODY {
+  opacity: 0.5;
 }
 /*# sourceMappingURL=main.css.map */

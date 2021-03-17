@@ -1,6 +1,6 @@
 /* Common font, color, bg-color */
-body { 
-  font-family: "Roboto", sans-serif;
+body {
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -26,4 +26,9 @@ ul {
 .link {
   text-decoration: none;
   font-style: normal;
+}
+
+/* Remove markers from lists */
+.list {
+  list-style: none;
 }

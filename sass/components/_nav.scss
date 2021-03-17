@@ -3,12 +3,8 @@
   align-items: center;
 }
 
-/* nav */
 .nav__list {
   display: flex;
-
-  /* Remove markers from lists */
-  list-style: none;
 }
 
 .nav__item:not(.nav__item:last-child) {
@@ -33,9 +29,13 @@
   &:focus {
     color: var(--accent-color);
     outline: none;
+
+    &::after,
+    &::after {
+      background-color: var(--accent-color);
+    }
   }
 }
-
 
 .nav__link::after {
   content: '';
@@ -51,7 +51,7 @@
   transition-timing-function: var(--transition-timing-function);
 }
 
-.nav__link:focus::after,
-.nav__link:hover::after {
-  background-color: var(--accent-color);
-}
+// .nav__link:focus::after,
+// .nav__link:hover::after {
+//   background-color: var(--accent-color);
+// }
