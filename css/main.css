@@ -153,7 +153,7 @@ ul {
   position: relative;
   display: inline-block;
   padding-top: 32px;
-  padding-bottom: 32px;
+  padding-bottom: 31px;
   font-size: 14px;
   color: var(--secondary-color);
   font-weight: 500;
@@ -251,7 +251,7 @@ img {
   /* outline: 1px dotted tomato; */
 }
 
-.card-title {
+.card__title {
   color: var(--secondary-color);
   font-weight: 500;
   font-size: 16px;
@@ -422,7 +422,7 @@ img {
   padding-bottom: 94px;
 }
 
-.section-title {
+.section__title {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -601,7 +601,7 @@ img {
 /* end of Logo styles */
 .footer .logo {
   margin-right: 0;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .footer .logo:hover, .footer .logo:focus {
@@ -681,6 +681,7 @@ img {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  margin-right: 8px;
   font-weight: 700;
   line-height: 1.15;
   letter-spacing: 0.03em;
@@ -691,6 +692,10 @@ img {
 .footer .social-links {
   margin-top: 20px;
   min-width: 206px;
+}
+
+.footer .social-links-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .footer .social-link {
@@ -1228,7 +1233,7 @@ img {
 }
 
 .email-form p {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .email-form .button {
@@ -1242,7 +1247,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   padding: 10px 28px;
-  margin-left: 10px;
+  margin-left: 8px;
   font-weight: 700;
   color: currentColor;
   font-size: 16px;

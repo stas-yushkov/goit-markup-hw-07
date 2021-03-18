@@ -1,20 +1,18 @@
-
 .footer .logo__part {
   color: var(--white-color);
 } /* end of Logo styles */
 
 .footer .logo {
   margin-right: 0;
-  margin-bottom: 20px;
-  
+  margin-bottom: 22px;
+
   &:hover,
   &:focus {
     outline: none;
 
     /* text-shadow: var(--box-shadow); */
-  }  
+  }
 }
-
 
 .footer {
   padding-top: 60px;
@@ -59,6 +57,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  margin-right: 8px;
 
   font-weight: 700;
   line-height: 1.15;
@@ -71,17 +70,20 @@
 .footer .social-links {
   margin-top: 20px;
   min-width: 206px;
+  // justify-content: left;
+
+  &-item:not(:last-child) {
+    margin-right: 8px;
+  }
 }
 
 .footer .social-link {
   background-color: var(--footer-socials-bg-color);
   fill: var(--white-color);
 
-  
   &:focus,
   &:hover {
     background-color: var(--accent-color);
     outline: none;
   }
-
 }
