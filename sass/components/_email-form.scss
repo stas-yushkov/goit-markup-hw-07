@@ -8,12 +8,12 @@
   font-style: normal;
 }
 
-.email-form .label {
+.email-form__label {
   display: block;
   margin-bottom: 22px;
 }
 
-.email-form .button {
+.email-form__button {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -34,24 +34,22 @@
   }
 }
 
-.email-form-icon {
+.email-form__icon {
   fill: currentColor;
   margin-left: 10px;
 }
 
-/* .email-form .input {
-  
-} */
+.email-form__input {
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
 
-.email-form .input:hover,
-.email-form .input:focus {
-  border: 1px solid var(--accent-color);
+    transition-property: border-color;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+  }
 
-  transition-property: border-color;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-timing-function);
-}
-
-.email-form .input::placeholder {
-  color: var(--address-primary-color);
+  &::placeholder {
+    color: var(--address-primary-color);
+  }
 }

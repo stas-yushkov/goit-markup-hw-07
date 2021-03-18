@@ -266,6 +266,10 @@ img {
 }
 
 /* end of main section */
+.card__text {
+  line-height: 1.85;
+}
+
 /* Hero section */
 .hero {
   display: -webkit-box;
@@ -761,7 +765,7 @@ img {
 }
 
 .about.section {
-  padding-top: 6px;
+  padding-top: 0;
 }
 
 .about__container {
@@ -1232,12 +1236,12 @@ img {
   font-style: normal;
 }
 
-.email-form .label {
+.email-form__label {
   display: block;
   margin-bottom: 22px;
 }
 
-.email-form .button {
+.email-form__button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -1259,20 +1263,16 @@ img {
   text-align: center;
 }
 
-.email-form .button:hover, .email-form .button:focus {
+.email-form__button:hover, .email-form__button:focus {
   background-color: var(--hover-background-color);
 }
 
-.email-form-icon {
+.email-form__icon {
   fill: currentColor;
   margin-left: 10px;
 }
 
-/* .email-form .input {
-  
-} */
-.email-form .input:hover,
-.email-form .input:focus {
+.email-form__input:hover, .email-form__input:focus {
   border: 1px solid var(--accent-color);
   -webkit-transition-property: border-color;
   transition-property: border-color;
@@ -1282,19 +1282,19 @@ img {
           transition-timing-function: var(--transition-timing-function);
 }
 
-.email-form .input::-webkit-input-placeholder {
+.email-form__input::-webkit-input-placeholder {
   color: var(--address-primary-color);
 }
 
-.email-form .input:-ms-input-placeholder {
+.email-form__input:-ms-input-placeholder {
   color: var(--address-primary-color);
 }
 
-.email-form .input::-ms-input-placeholder {
+.email-form__input::-ms-input-placeholder {
   color: var(--address-primary-color);
 }
 
-.email-form .input::placeholder {
+.email-form__input::placeholder {
   color: var(--address-primary-color);
 }
 

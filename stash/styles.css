@@ -457,7 +457,6 @@ img {
 
   margin-top: var(--card-set-gap);
   margin-left: var(--card-set-gap);
-
 }
 
 .portfolio-item-link {
@@ -1290,7 +1289,7 @@ img {
   background-color: var(--hover-background-color);
 }
 
-.email-form-icon {
+.email-form__icon {
   fill: currentColor;
   margin-left: 10px;
 }
