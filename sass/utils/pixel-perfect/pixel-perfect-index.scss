@@ -4,18 +4,12 @@ HTML {
 
   /* По умолчанию мобильный макет */
   background-image: url('../images/studio-pp.jpg');
-}
 
-/* Планшет */
-@media (min-width: 760px) {
-  HTML {
+  @media (min-width: 760px) {
     background-image: url('../images/studio-pp.jpg'); /* Планшетный макет */
   }
-}
 
-/* Десктоп */
-@media (min-width: 960px) {
-  HTML {
+  @media (min-width: 960px) {
     background-image: url('../images/studio-pp.jpg'); /* Десктопный макет */
   }
 }

@@ -1232,7 +1232,8 @@ img {
   font-style: normal;
 }
 
-.email-form p {
+.email-form .label {
+  display: block;
   margin-bottom: 22px;
 }
 
@@ -1304,7 +1305,6 @@ HTML {
   background-image: url("../images/studio-pp.jpg");
 }
 
-/* Планшет */
 @media (min-width: 760px) {
   HTML {
     background-image: url("../images/studio-pp.jpg");
@@ -1312,7 +1312,6 @@ HTML {
   }
 }
 
-/* Десктоп */
 @media (min-width: 960px) {
   HTML {
     background-image: url("../images/studio-pp.jpg");
@@ -1331,7 +1330,6 @@ HTML {
   background-image: url("../images/portfolio-pp.jpg");
 }
 
-/* Планшет */
 @media (min-width: 760px) {
   HTML {
     background-image: url("../images/portfolio-pp.jpg");
@@ -1339,7 +1337,6 @@ HTML {
   }
 }
 
-/* Десктоп */
 @media (min-width: 960px) {
   HTML {
     background-image: url("../images/portfolio-pp.jpg");

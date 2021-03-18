@@ -6,7 +6,6 @@ HTML {
   background-image: url("../images/studio-pp.jpg");
 }
 
-/* Планшет */
 @media (min-width: 760px) {
   HTML {
     background-image: url("../images/studio-pp.jpg");
@@ -14,7 +13,6 @@ HTML {
   }
 }
 
-/* Десктоп */
 @media (min-width: 960px) {
   HTML {
     background-image: url("../images/studio-pp.jpg");
